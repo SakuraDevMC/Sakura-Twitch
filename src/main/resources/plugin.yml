@@ -1,0 +1,4 @@
+name: Twitch
+version: '${project.version}'
+main: me.banker.twitch.Twitch
+api-version: '1.20'

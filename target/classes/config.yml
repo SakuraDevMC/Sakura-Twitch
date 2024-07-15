@@ -1,0 +1,26 @@
+name: Twitch
+version: '1.0-SNAPSHOT'
+main: me.banker.twitch.Twitch
+api-version: '1.20'
+description: A plugin that connects Minecraft chat to Twitch channels.
+authors:
+  - Hitman
+  - Banker
+commands:
+  twitchchat:
+    description: Connect to a Twitch channel or disconnect
+    usage: /twitchchat <channel> or /twitchchat disconnect
+    permission: twitchchat.use
+    aliases: [tchat, tc]
+  twitchchatcheck:
+    description: Check which Twitch channel a player is connected to
+    usage: /twitchchatcheck <player>
+    permission: twitchchat.admin
+    aliases: [tchatcheck, tcchk]
+permissions:
+  twitchchat.use:
+    description: Allows the player to use the /twitchchat command
+    default: true
+  twitchchat.admin:
+    description: Allows the player to use admin features of the Twitch chat plugin
+    default: op
